@@ -4,7 +4,7 @@
     <h3>Subscribe to our newsletter to receive our most updated articles</h3>
 
     <!-- <b-form @submit.stop.prevent> -->
-    <b-input-group class="mx-auto my-3" style="width:288px">
+    <b-input-group class="mx-auto my-3 col-lg-6 col-md-6 col-sm-12" style="min-width:288px">
       <b-form-input v-model="email" placeholder="Email"></b-form-input>
       <b-input-group-append>
         <b-button class="text-white" style="background-color:#fd841a" variant="warning" href="#">Subscribe</b-button>

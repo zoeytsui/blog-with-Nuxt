@@ -18,7 +18,6 @@
 
             <hr class="my-2">
 
-            <!-- <p>{{ article.description }}</p> -->
             <nuxt-content :document="article" />
 
           </b-card-text>
@@ -56,7 +55,7 @@ export default {
   }
 }
 .nuxt-content {
-  height: 6vw;
+  height: 70px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
