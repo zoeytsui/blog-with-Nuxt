@@ -3,6 +3,7 @@
     <div class="topbanner">
       <h1>Blog</h1>
     </div>
+
     <client-only>
       <b-card-group v-for="article of articles" :key="article.slug">
         <b-card v-if="article.img" :img-src="article.img" :img-alt="article.alt" img-top tag="article" class="mx-auto mt-5 border-0 col-lg-9 col-md-12">
@@ -22,10 +23,11 @@
 
           </b-card-text>
 
-          <b-button pill variant="outline-info" :to="`/blog/${article.slug}`">Read More</b-button>
+          <b-button pill variant="outline-info" @click="$router.push(`/blog/${article.slug}`)">Read More</b-button>
         </b-card>
       </b-card-group>
     </client-only>
+
   </section>
 </template>
 

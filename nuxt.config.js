@@ -75,7 +75,7 @@ export default {
   },
 
   server: {
-    host: 'localhost',
-    port: '7070'
+    host: process.env.IP,
+    port: process.env.PORT
   }
 }

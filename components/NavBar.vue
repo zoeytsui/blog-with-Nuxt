@@ -8,9 +8,9 @@
     <b-collapse id="nav-collapse" is-nav>
 
       <b-navbar-nav>
-        <b-nav-item to='/'>Articles</b-nav-item>
-        <b-nav-item to='/contact-us'>Contact us</b-nav-item>
-        <b-nav-item to='/about-us'>About us</b-nav-item>
+        <b-nav-item @click="$router.push(`/`)">Articles</b-nav-item>
+        <b-nav-item @click="$router.push(`/contact-us`)">Contact us</b-nav-item>
+        <b-nav-item @click="$router.push(`/about-us`)">About us</b-nav-item>
       </b-navbar-nav>
 
       <b-navbar-nav class="ml-auto">
