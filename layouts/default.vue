@@ -10,6 +10,13 @@
   </div>
 </template>
 
+<script>
+export default {
+  created() {
+    this.$store.dispatch("locales/getData");
+  },
+}
+</script>
 
 <style lang="scss">
 html {

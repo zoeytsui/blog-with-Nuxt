@@ -31,6 +31,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '@/plugins/script.js' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -51,7 +52,7 @@ export default {
     // https://i18n.nuxtjs.org
     'nuxt-i18n',
     // for global css style sheet
-    '@nuxtjs/style-resources',
+    '@nuxtjs/style-resources'
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -60,7 +61,32 @@ export default {
   },
 
   i18n: {
-    locales: ['en'],
+    locales: [
+      {
+        code: 'en',
+        iso: 'en_US',
+        name: 'English',
+        img: '/images/English.png'
+      },
+      {
+        code: 'my',
+        iso: 'ms_MY',
+        name: 'Malay',
+        img: '/images/malay.png'
+      },
+      {
+        code: 'vn',
+        iso: 'vi_VN',
+        name: 'Tiếng Việt',
+        img: '/images/VN.png'
+      },
+      {
+        code: 'ch',
+        iso: 'zh_TW',
+        name: '繁體中文',
+        img: '/images/CN.png'
+      }
+    ],
     defaultLocale: 'en',
   },
 
@@ -72,6 +98,11 @@ export default {
     babel: {
       compact: true,
     },
+    extend(config, { isDev, isClient }) {
+      config.node = {
+        fs: "empty"
+      };
+    }
   },
 
   server: {
