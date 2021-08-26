@@ -4,40 +4,69 @@
       <h1>Blog</h1>
     </div>
 
+    <b-overlay no-center :show="showOverlay" ref="overlayBanner">
+      <template #overlay>
+        <!-- <b-img style="z-index:10; right:0" class="d-xl-block d-lg-block d-none position-fixed" right width="284" height="284" src="/images/300x300_en.jpg"></b-img> -->
+        <b-img class="d-xl-block d-lg-block d-md-block d-none" right width="284" height="284" src="/images/300x300_en.jpg"></b-img>
+      </template>
+    </b-overlay>
+
     <client-only>
       <b-card-group v-for="article of articles" :key="article.slug">
-        <b-card v-if="article.img" :img-src="article.img" :img-alt="article.alt" img-top tag="article" class="mx-auto mt-5 border-0 col-lg-9 col-md-12">
-          <b-card-text>
+        <b-card tag="article" class="mx-auto mt-5 border-0 col-lg-9">
+          <b-card-img v-if="article.img" :src="article.img" :alt="article.alt" class="px-0 my-4" center fluid></b-card-img>
 
-            <h2>{{ article.title }}</h2>
-            <div class="row">
-              <p class="col my-auto"><small><em>{{ article.date }}</em></small></p>
-              <p class="col col-lg-4 my-auto">
+          <b-card-text>
+            <b-row>
+              <b-col class="col-12 col-lg-8">
+                <h2>{{ article.title }}</h2>
+                <p class="my-auto"><em>{{ article.date }}</em></p>
+              </b-col>
+
+              <b-col class="col-12 col-lg-4 my-auto">
+                <b-row class="col">
+                  <p class="my-auto">Share: </p>
+                  <a href="https://www.facebook.com/HXFXGlobal/">
+                    <b-img class="mx-1" width="32" height="32" left src="/images/FB.png"></b-img>
+                  </a>
+                  <a href="https://instagram.com/hxfx_global?utm_medium=copy_link">
+                    <b-img class="mx-1" width="32" height="32" left src="/images/IG.png"></b-img>
+                  </a>
+                </b-row>
+
                 <b-badge variant="info" class="mx-1" v-for="tag of article.tags" :key="tag">{{tag}}</b-badge>
-              </p>
-            </div>
+              </b-col>
+            </b-row>
 
             <hr class="my-2">
-
             <nuxt-content :document="article" />
-
           </b-card-text>
 
-          <b-button pill variant="outline-info" @click="$router.push(`/blog/${article.slug}`)">Read More</b-button>
+          <b-button pill variant="outline-info" :to="`/blog/${article.slug}`">Read More</b-button>
         </b-card>
       </b-card-group>
     </client-only>
+
+    <b-img class="col-lg-9 px-0 my-4" center fluid src="/images/1220x300_en.jpg"></b-img>
 
   </section>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      showOverlay: true
+    }
+  },
   async asyncData(context) {
     const articles = await context.$content('articles', context.params.slug)
       .sortBy('createdAt', 'desc')
       .fetch();
     return { articles }
+  },
+  mounted() {
+    console.log(this.$refs.overlayBanner.$el.style.top);
   }
 }
 </script>
