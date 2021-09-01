@@ -47,8 +47,8 @@ export default {
   },
   methods: {
     onSubmit(event) {
-      event.preventDefault()
-      alert(JSON.stringify(this.form))
+      event.preventDefault();
+      console.log(this.$objectToQueryString(this.form))
     },
     onReset(event) {
       event.preventDefault()
@@ -62,7 +62,7 @@ export default {
       this.$nextTick(() => {
         this.show = true
       })
-    }
+    },
   }
 }
 </script>

@@ -106,7 +106,7 @@ export default {
   },
 
   server: {
-    host: process.env.IP,
+    host: process.env.HOST,
     port: process.env.PORT
   }
 }

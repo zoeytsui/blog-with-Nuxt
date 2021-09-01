@@ -42,3 +42,12 @@ p {
     color: #5c5c5c;
     font-family: "Exo2-Medium";
 }
+
+.page-enter-active,
+.page-leave-active {
+    transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-active {
+    opacity: 0;
+}

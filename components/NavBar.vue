@@ -7,9 +7,14 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item @click="$router.push(`/`)">{{ $key('Articles') }}</b-nav-item>
-        <b-nav-item @click="$router.push(`/contact-us`)">{{$key('Contact us')}}</b-nav-item>
-        <b-nav-item @click="$router.push(`/about-us`)">{{$key('About us')}}</b-nav-item>
+
+        <!-- <b-nav-item custom :to="localePath(`/`)">{{ $key('Articles') }}</b-nav-item>
+        <b-nav-item custom :to="localePath(`/contact-us`)">{{$key('Contact us')}}</b-nav-item>
+        <b-nav-item custom :to="localePath(`/about-us`)">{{$key('About us')}}</b-nav-item> -->
+
+        <b-nav-item custom :to="localePath(`/`)">{{ 'Articles' }}</b-nav-item>
+        <b-nav-item custom :to="localePath(`/contact-us`)">{{'Contact us'}}</b-nav-item>
+        <b-nav-item custom :to="localePath(`/about-us`)">{{'About us'}}</b-nav-item>
       </b-navbar-nav>
 
       <b-navbar-nav class="ml-auto">
@@ -19,7 +24,8 @@
             <img :src="currentLangInfo.img" alt="" /> {{ currentLangInfo.name }}
           </template>
 
-          <b-dropdown-item v-for="locale in availableLocales" :key="locale.code" @click="$i18n.setLocale(locale.code)">
+          <!-- <b-dropdown-item v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)"> -->
+          <b-dropdown-item v-for="locale in availableLocales" :key="locale.code">
             <img :src="locale.img" alt="" /> {{locale.name}}
           </b-dropdown-item>
 

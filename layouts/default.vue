@@ -3,7 +3,9 @@
 
     <NavBar />
 
-    <Nuxt />
+    <transition name="page" mode="out-in">
+      <Nuxt />
+    </transition>
 
     <Footer />
 
