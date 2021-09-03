@@ -55,6 +55,21 @@ export default {
     '@nuxtjs/style-resources'
   ],
 
+  // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  axios: {
+    proxy: true
+  },
+
+  proxy: {
+    '/api': {
+      target: '',
+      pathRewrite: {
+        '^/api': '',
+        changeOrigin: true
+      }
+    },
+  },
+
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
     liveEdit: false,
@@ -89,9 +104,6 @@ export default {
     ],
     defaultLocale: 'en',
   },
-
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

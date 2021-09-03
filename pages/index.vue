@@ -22,9 +22,10 @@
               </b-col>
 
               <b-col class="col-12 col-lg-4 my-auto">
-                <b-row class="col">
+                <b-row class="col d-none">
                   <p class="my-auto">Share: </p>
-                  <a href="https://www.facebook.com/HXFXGlobal/">
+                  <!-- <a href="https://www.facebook.com/HXFXGlobal/"> -->
+                  <a :href="`https://www.facebook.com/sharer/sharer.php?u=http://172.20.132.148:7071${$route.fullPath}`">
                     <b-img class="mx-1" width="32" height="32" left src="/images/FB.png"></b-img>
                   </a>
                   <a href="https://instagram.com/hxfx_global?utm_medium=copy_link">

@@ -20,8 +20,7 @@
         </b-form-group>
 
         <b-form-group>
-          <b-form-textarea v-model="form.description" placeholder="Description :" required>
-          </b-form-textarea>
+          <b-form-textarea v-model="form.description" placeholder="Description :" required></b-form-textarea>
         </b-form-group>
 
         <b-button pill class="px-5 m-2" type="submit" variant="info">Send</b-button>
