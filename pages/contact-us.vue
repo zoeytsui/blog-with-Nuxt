@@ -36,10 +36,10 @@ export default {
   data() {
     return {
       form: {
-        name: '',
-        email: '',
-        subject: '',
-        description: ''
+        name: null,
+        email: null,
+        subject: null,
+        description: null
       },
       show: true
     }
@@ -47,15 +47,21 @@ export default {
   methods: {
     onSubmit(event) {
       event.preventDefault();
-      console.log(this.$objectToQueryString(this.form))
+
+      this.$axios.$post(`api/tools/?service=acccenter.addContactUs`, this.form).then(res => {
+        if (res.ret !== 200) return alert(`${res.ret}: ${res.msg}`)
+        alert('Succeed!')
+      })
     },
     onReset(event) {
       event.preventDefault()
       // Reset our form values
-      this.form.name = ''
-      this.form.email = ''
-      this.form.subject = ''
-      this.form.description = ''
+      this.form = {
+        name: null,
+        email: null,
+        subject: null,
+        description: null
+      };
       // Trick to reset/clear native browser form validation state
       this.show = false
       this.$nextTick(() => {

@@ -7,7 +7,7 @@
     <b-input-group class="mx-auto my-3 col-lg-6 col-md-6 col-sm-12" style="min-width:288px">
       <b-form-input v-model="email" placeholder="Email"></b-form-input>
       <b-input-group-append>
-        <b-button class="text-white" style="background-color:#fd841a" variant="warning" href="#">Subscribe</b-button>
+        <b-button class="text-white" style="background-color:#fd841a" variant="warning" @click="onSubscribe">Subscribe</b-button>
       </b-input-group-append>
     </b-input-group>
     <!-- </b-form> -->
@@ -27,6 +27,15 @@ export default {
   data() {
     return {
       email: null
+    }
+  },
+  methods: {
+    onSubscribe() {
+      if (!this.email || this.email === '') return;
+      this.$axios.$post(`api/tools/?service=acccenter.addSubscribe`, { email: this.email }).then(res => {
+        if (res.ret !== 200) return alert(`${res.ret}: ${res.msg}`)
+        alert('Succeed!')
+      })
     }
   }
 }
