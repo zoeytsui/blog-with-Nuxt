@@ -3,6 +3,7 @@
     <div class="topbanner">
       <h1>Blog</h1>
     </div>
+
     <client-only>
       <b-card-group class="main">
         <b-card v-if="article.img" :img-src="article.img" :img-alt="article.alt" img-top tag="article" class="mx-auto mt-5 border-0 col-lg-9 col-md-12">
@@ -17,7 +18,7 @@
               <b-col class="col-12 col-lg-4 my-auto">
                 <b-row class="col d-none">
                   <p class="my-auto">Share: </p>
-                  <a :href="`https://www.facebook.com/sharer/sharer.php?u=http://172.20.132.148:7071${$route.fullPath}`">
+                  <a :href="`https://www.facebook.com/sharer/sharer.php?u=http://forexclusive.info${$route.fullPath}`">
                     <b-img class="mx-1" width="32" height="32" left src="/images/FB.png"></b-img>
                   </a>
                   <a href="https://instagram.com/hxfx_global?utm_medium=copy_link">

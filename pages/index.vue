@@ -5,14 +5,13 @@
     </div>
 
     <!-- AD 1 -->
-    <b-img style="z-index:10; right:0; top: 494px" class="d-xl-block d-lg-block d-none position-fixed col-2" src="/images/300x300_en.jpg"></b-img>
+    <b-img style="z-index:10; right:0; top: 438px" class="d-xl-block d-lg-block d-none position-fixed col-2" src="/images/300x300_en.jpg"></b-img>
 
     <client-only>
-      <b-card-group ref="article" v-for="article,index of articles" :key="index">
-        <!-- <b-card-group ref="article" v-for="article of articles" :key="article.slug"> -->
-        <b-card tag="article" class="mx-auto mt-5 border-0 col-lg-9">
+      <b-card-group ref="article" v-for="article,index of articles" :key="index" class="justify-content-center">
+        <b-card tag="article" class="border-0 col-lg-9">
 
-          <b-card-img v-if="article.img" :src="article.img" :alt="article.alt" class="px-0 my-4" center fluid></b-card-img>
+          <b-card-img v-if="article.img" :src="article.img" :alt="article.alt" class="my-3" center fluid></b-card-img>
 
           <b-card-text>
             <b-row>
@@ -25,7 +24,7 @@
                 <b-row class="col d-none">
                   <p class="my-auto">Share: </p>
                   <!-- <a href="https://www.facebook.com/HXFXGlobal/"> -->
-                  <a :href="`https://www.facebook.com/sharer/sharer.php?u=http://172.20.132.148:7071${$route.fullPath}`">
+                  <a :href="`https://www.facebook.com/sharer/sharer.php?u=http://forexclusive.info${$route.fullPath}`">
                     <b-img class="mx-1" width="32" height="32" left src="/images/FB.png"></b-img>
                   </a>
                   <a href="https://instagram.com/hxfx_global?utm_medium=copy_link">
@@ -44,7 +43,7 @@
           <b-button pill variant="outline-info" :to="`/blog/${article.slug}`">Read More</b-button>
 
           <!-- AD 2 -->
-          <b-img v-if="index ===0" class="col-lg-12 px-0 my-5" center fluid src="/images/1220x300_en.jpg"></b-img>
+          <b-img v-if="index===0" class="mt-5" center fluid src="/images/1220x300_en.jpg"></b-img>
 
         </b-card>
       </b-card-group>
