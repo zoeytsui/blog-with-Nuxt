@@ -9,7 +9,7 @@
 
     <client-only>
       <b-card-group ref="article" v-for="article,index of articles" :key="index" class="justify-content-center">
-        <b-card tag="article" class="border-0 col-lg-9">
+        <b-card tag="article" class="border-0 col-lg-8">
 
           <b-card-img v-if="article.img" :src="article.img" :alt="article.alt" class="my-3" center fluid></b-card-img>
 
