@@ -7,25 +7,19 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-
-        <!-- <b-nav-item custom :to="localePath(`/`)">{{ $key('Articles') }}</b-nav-item>
-        <b-nav-item custom :to="localePath(`/contact-us`)">{{$key('Contact us')}}</b-nav-item>
-        <b-nav-item custom :to="localePath(`/about-us`)">{{$key('About us')}}</b-nav-item> -->
-
-        <b-nav-item custom :to="localePath(`/`)">{{ 'Articles' }}</b-nav-item>
-        <b-nav-item custom :to="localePath(`/contact-us`)">{{'Contact us'}}</b-nav-item>
-        <b-nav-item custom :to="localePath(`/about-us`)">{{'About us'}}</b-nav-item>
+        <b-nav-item :to="localePath(`/`)">{{$key('Articles')}}</b-nav-item>
+        <b-nav-item :to="localePath(`/contact-us`)">{{$key('Contact us')}}</b-nav-item>
+        <b-nav-item :to="localePath(`/about-us`)">{{$key('About us')}}</b-nav-item>
       </b-navbar-nav>
 
       <b-navbar-nav class="ml-auto">
         <b-nav-item-dropdown right>
 
           <template #button-content>
-            <img :src="currentLangInfo.img" alt="" /> {{ currentLangInfo.name }}
+            <img :src="currentLocale.img" alt="" /> {{ currentLocale.name }}
           </template>
 
-          <!-- <b-dropdown-item v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)"> -->
-          <b-dropdown-item v-for="locale in availableLocales" :key="locale.code">
+          <b-dropdown-item v-for="locale in $i18n.locales" :key="locale.code" :to="switchLocalePath(locale.code)">
             <img :src="locale.img" alt="" /> {{locale.name}}
           </b-dropdown-item>
 
@@ -41,14 +35,8 @@
 <script>
 export default {
   computed: {
-    currentLang() {
-      return this.$i18n.locale;
-    },
-    currentLangInfo() {
-      return this.$i18n.locales.find(i => i.code === this.currentLang)
-    },
-    availableLocales() {
-      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    currentLocale() {
+      return this.$i18n.locales.find(i => i.code === this.$i18n.locale)
     }
   }
 }

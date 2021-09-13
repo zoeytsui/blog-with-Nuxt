@@ -5,10 +5,10 @@
     </div>
 
     <b-jumbotron bg-variant="white">
-      <h2 class="mx-3">About us</h2>
+      <h2 class="mx-3">{{$key('About us')}}</h2>
 
       <p class="col-sm-6">
-        Forexclusive has years of experience in forex, indices, commodities, and cryptocurrencies. Our team of financial experts aims to provide the latest trading news and market analyses. We study and forecast various investment products base on the global market news and events, quoted and referenced from the world’s leading financial institutes, making us one of the best financial website for all kinds of investors.
+        {{$key('Forexclusive has years of experience in forex, indices, commodities, and cryptocurrencies. Our team of financial experts aims to provide the latest trading news and market analyses. We study and forecast various investment products base on the global market news and events, quoted and referenced from the world’s leading financial institutes, making us one of the best financial website for all kinds of investors.')}}
       </p>
     </b-jumbotron>
 

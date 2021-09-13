@@ -1,14 +1,12 @@
-export default (context, inject) => {
+export default ({ i18n, store }, inject) => {
     // pass content key
     inject('key', (str) => {
         try {
-            let result;
-            let lang = context.i18n.locale.toUpperCase();
-            let contentArr = context.store.state.locales.contentArr;
+            let lang = i18n.locale.toUpperCase();
+            let content = store.state.locales.content;
+            let keyObj = content.default.find(arr => arr.KEY.includes(str.toUpperCase()));
 
-            contentArr.default.find(arr => { arr.KEY === str.toUpperCase() ? result = arr[`${lang}`] : null });
-
-            return result;
+            return !keyObj ? str : !keyObj[`${lang}`] ? keyObj['EN'] : keyObj[`${lang}`]
         } catch (error) { console.error(error) }
     }),
         // Turn an Object into Query String Parameters

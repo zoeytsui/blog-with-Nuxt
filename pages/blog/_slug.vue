@@ -1,7 +1,7 @@
 <template>
-  <article>
+  <section>
     <div class="topbanner">
-      <h1>Blog</h1>
+      <h1>{{$key('Blog')}}</h1>
     </div>
 
     <client-only>
@@ -17,7 +17,8 @@
 
               <b-col class="col-12 col-lg-4 my-auto">
                 <b-row class="col d-none">
-                  <p class="my-auto">Share: </p>
+                  <p class="my-auto">{{$key('Share')}}: </p>
+                  <!-- <a href="https://www.facebook.com/HXFXGlobal/"> -->
                   <a :href="`https://www.facebook.com/sharer/sharer.php?u=http://forexclusive.info${$route.fullPath}`">
                     <b-img class="mx-1" width="32" height="32" left src="/images/FB.png"></b-img>
                   </a>
@@ -37,14 +38,30 @@
         </b-card>
       </b-card-group>
     </client-only>
-  </article>
+
+  </section>
 </template>
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const article = await $content('articles', params.slug).fetch();
-    return { article }
+  async asyncData({ $content, i18n, params }) {
+    try {
+      const article = await $content(`articles/${i18n.locale}`, params.slug).fetch();
+      const articles = await $content(`articles/${i18n.locale}`).fetch();
+
+      let slices = [];
+      for (let i = 0, len = articles.length; i < len; i += 3) {
+        slices.push(articles.slice(i, i + 3));
+      }
+
+      const [prev, next] = await $content(`articles/${i18n.locale}`)
+        .only(['title', 'slug'])
+        .sortBy('createdAt', 'asc')
+        .surround(params.slug)
+        .fetch()
+
+      return { article, prev, next, slices }
+    } catch (error) { console.error(error) }
   }
 }
 </script>

@@ -1,11 +1,13 @@
 <template>
   <section>
     <div class="topbanner">
-      <h1>Blog</h1>
+      <h1>{{$key('Blog')}}</h1>
     </div>
 
     <!-- AD 1 -->
-    <b-img style="z-index:10; right:0; top: 438px" class="d-xl-block d-lg-block d-none position-fixed col-2" src="/images/300x300_en.jpg"></b-img>
+    <a :href="`https://www.hxfx.co/?lang=${targetLang}`">
+      <b-img style="z-index:10; right:0; top: 438px" class="d-xl-block d-lg-block d-none position-fixed col-2" :src="`/images/300x300_${$i18n.locale}.jpg`"></b-img>
+    </a>
 
     <client-only>
       <b-card-group ref="article" v-for="article,index of articles" :key="index" class="justify-content-center">
@@ -22,8 +24,7 @@
 
               <b-col class="col-12 col-lg-4 my-auto">
                 <b-row class="col d-none">
-                  <p class="my-auto">Share: </p>
-                  <!-- <a href="https://www.facebook.com/HXFXGlobal/"> -->
+                  <p class="my-auto">{{$key('Share')}}: </p>
                   <a :href="`https://www.facebook.com/sharer/sharer.php?u=http://forexclusive.info${$route.fullPath}`">
                     <b-img class="mx-1" width="32" height="32" left src="/images/FB.png"></b-img>
                   </a>
@@ -40,10 +41,12 @@
             <nuxt-content :document="article" />
           </b-card-text>
 
-          <b-button pill variant="outline-info" :to="`/blog/${article.slug}`">Read More</b-button>
+          <b-button pill variant="outline-info" :to="`/blog/${article.slug}`">{{$key('Read More')}}</b-button>
 
           <!-- AD 2 -->
-          <b-img v-if="index===0" class="mt-5" center fluid src="/images/1220x300_en.jpg"></b-img>
+          <a v-if="index===0" :href="`https://www.hxfx.co/?lang=${targetLang}`">
+            <b-img class="mt-5" center fluid :src="`/images/1220x300_${$i18n.locale}.jpg`"></b-img>
+          </a>
 
         </b-card>
       </b-card-group>
@@ -54,12 +57,22 @@
 
 <script>
 export default {
-  async asyncData(context) {
-    const articles = await context.$content('articles', context.params.slug)
+  async asyncData({ $content, i18n }) {
+    const articles = await $content(`articles/${i18n.locale}`)
       .sortBy('createdAt', 'desc')
       .fetch();
     return { articles }
   },
+  computed: {
+    targetLang() {
+      switch (this.$i18n.locale) {
+        case 'en':
+          return 'en';
+        case 'vn':
+          return 'vi';
+      }
+    }
+  }
 }
 </script>
 

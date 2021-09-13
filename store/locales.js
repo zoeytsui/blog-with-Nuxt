@@ -2,12 +2,12 @@ const excelToJson = require('convert-excel-to-json');
 const fs = require('fs');
 
 export const state = () => ({
-    contentArr: []
+    content: []
 })
 
 export const mutations = {
-    updateData(state, contentArr) {
-        state.contentArr = contentArr;
+    updateData(state, content) {
+        state.content = content;
     },
 }
 
@@ -26,7 +26,8 @@ export const actions = {
                     // {{columnHeader}} will follow the config header.rows or, in case it is not specified, it will always treat the first row as a header.
                     '*': '{{columnHeader}}'
                 },
-                sheetStubs: true
+                // If you would like to include null values in the result, you can specify the sheetStubs option.
+                sheetStubs: false
             });
             commit('updateData', file);
 

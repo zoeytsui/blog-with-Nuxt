@@ -6,25 +6,25 @@
 
     <b-jumbotron bg-variant="white">
       <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-        <h2 class="text-left mb-5">Contact us</h2>
+        <h2 class="text-left mb-5">{{$key('Contact us')}}</h2>
         <b-form-group>
-          <b-form-input v-model="form.name" placeholder="Contact Name :" required></b-form-input>
+          <b-form-input v-model="form.name" :placeholder="`${$key('Contact Name')} :`" required></b-form-input>
         </b-form-group>
 
         <b-form-group>
-          <b-form-input v-model="form.email" type="email" placeholder="Email :" required></b-form-input>
+          <b-form-input v-model="form.email" type="email" :placeholder="`${$key('Email')} :`" required></b-form-input>
         </b-form-group>
 
         <b-form-group>
-          <b-form-input v-model="form.subject" placeholder="Subject :" required></b-form-input>
+          <b-form-input v-model="form.subject" :placeholder="`${$key('Subject')} :`" required></b-form-input>
         </b-form-group>
 
         <b-form-group>
-          <b-form-textarea v-model="form.description" placeholder="Description :" required></b-form-textarea>
+          <b-form-textarea v-model="form.description" :placeholder="`${$key('Description')} :`" required></b-form-textarea>
         </b-form-group>
 
-        <b-button pill class="px-5 m-2" type="submit" variant="info">Send</b-button>
-        <b-button pill class="px-5 m-2" type="reset" variant="secondary">Reset</b-button>
+        <b-button pill class="px-5 m-2" type="submit" variant="info">{{$key('Send')}}</b-button>
+        <b-button pill class="px-5 m-2" type="reset" variant="secondary">{{$key('Reset')}}</b-button>
       </b-form>
     </b-jumbotron>
 
