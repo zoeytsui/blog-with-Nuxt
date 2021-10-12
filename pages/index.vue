@@ -41,7 +41,7 @@
             <nuxt-content :document="article" />
           </b-card-text>
 
-          <b-button pill variant="outline-info" :to="`/blog/${article.slug}`">{{$key('Read More')}}</b-button>
+          <b-button pill variant="outline-info" :to="localePath(`/blog/${article.slug}`)">{{$key('Read More')}}</b-button>
 
           <!-- AD 2 -->
           <a v-if="index===0" :href="`https://www.hxfx.co/?lang=${targetLang}`">

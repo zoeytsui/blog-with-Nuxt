@@ -39,6 +39,7 @@
       </b-card-group>
     </client-only>
 
+    <!-- <AlsoSee :articles="articles" class="mt-8" /> -->
   </section>
 </template>
 
@@ -49,18 +50,7 @@ export default {
       const article = await $content(`articles/${i18n.locale}`, params.slug).fetch();
       const articles = await $content(`articles/${i18n.locale}`).fetch();
 
-      let slices = [];
-      for (let i = 0, len = articles.length; i < len; i += 3) {
-        slices.push(articles.slice(i, i + 3));
-      }
-
-      const [prev, next] = await $content(`articles/${i18n.locale}`)
-        .only(['title', 'slug'])
-        .sortBy('createdAt', 'asc')
-        .surround(params.slug)
-        .fetch()
-
-      return { article, prev, next, slices }
+      return { article, articles }
     } catch (error) { console.error(error) }
   }
 }

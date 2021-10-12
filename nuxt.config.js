@@ -15,6 +15,10 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],
+    script: [
+      { src: 'https://code.jquery.com/jquery-3.5.1.slim.min.js' },
+      { src: 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js' },
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }
     ]
@@ -22,7 +26,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@/assets/css/main'
+    '@/assets/css/main',
   ],
 
   styleResources: {
@@ -62,7 +66,8 @@ export default {
 
   proxy: {
     '/api': {
-      target: 'http://192.168.75.48:5201/',
+      target: 'https://openapi.hxfxglobal.com/', // prd
+      // target: 'http://192.168.75.48:5201/', // uat
       pathRewrite: {
         '^/api': '',
         changeOrigin: true
@@ -83,24 +88,24 @@ export default {
         name: 'English',
         img: '/images/English.png'
       },
-      {
-        code: 'my',
-        iso: 'ms_MY',
-        name: 'Malay',
-        img: '/images/malay.png'
-      },
-      {
-        code: 'vn',
-        iso: 'vi_VN',
-        name: 'Tiếng Việt',
-        img: '/images/VN.png'
-      },
-      {
-        code: 'ch',
-        iso: 'zh_TW',
-        name: '繁體中文',
-        img: '/images/CN.png'
-      }
+      // {
+      //   code: 'my',
+      //   iso: 'ms_MY',
+      //   name: 'Malay',
+      //   img: '/images/malay.png'
+      // },
+      // {
+      //   code: 'vn',
+      //   iso: 'vi_VN',
+      //   name: 'Tiếng Việt',
+      //   img: '/images/VN.png'
+      // },
+      // {
+      //   code: 'ch',
+      //   iso: 'zh_TW',
+      //   name: '繁體中文',
+      //   img: '/images/CN.png'
+      // }
     ],
     defaultLocale: 'en',
   },
