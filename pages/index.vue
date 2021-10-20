@@ -5,9 +5,7 @@
     </div>
 
     <!-- AD 1 -->
-    <a :href="`https://www.hxfx.co/?lang=${targetLang}`">
-      <b-img style="z-index:10; right:0; top: 438px" class="d-xl-block d-lg-block d-none position-fixed col-2" :src="`/images/300x300_${$i18n.locale}.jpg`"></b-img>
-    </a>
+    <SideAd />
 
     <client-only>
       <b-card-group ref="article" v-for="article,index of articles" :key="index" class="justify-content-center">
@@ -44,19 +42,27 @@
           <b-button pill variant="outline-info" :to="localePath(`/blog/${article.slug}`)">{{$key('Read More')}}</b-button>
 
           <!-- AD 2 -->
-          <a v-if="index===0" :href="`https://www.hxfx.co/?lang=${targetLang}`">
-            <b-img class="mt-5" center fluid :src="`/images/1220x300_${$i18n.locale}.jpg`"></b-img>
+          <!-- pc only -->
+          <!-- <a v-if="index===0" class="d-none d-lg-block" :href="`https://www.promo-hxfxglobal.com/?lang=${targetLang}`">
+            <b-img class="mt-5" center fluid :src="`/images/blog_banner_pc_300x250_${$i18n.locale}.png`"></b-img>
+          </a> -->
+
+          <!-- mobile only -->
+          <a v-if="index % 2" class="d-block d-lg-none" :href="`https://www.promo-hxfxglobal.com/?lang=${targetLang}`">
+            <b-img class="mt-5" center fluid :src="`/images/blog_banner_mobile_300x200_${$i18n.locale}.png`"></b-img>
           </a>
 
         </b-card>
       </b-card-group>
     </client-only>
-
+    
   </section>
 </template>
 
 <script>
+import SideAd from '../components/SideAd.vue';
 export default {
+  components: { SideAd },
   async asyncData({ $content, i18n }) {
     const articles = await $content(`articles/${i18n.locale}`)
       .sortBy('createdAt', 'desc')
