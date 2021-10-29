@@ -94,12 +94,12 @@ export default {
       //   name: 'Malay',
       //   img: '/images/malay.png'
       // },
-      // {
-      //   code: 'vn',
-      //   iso: 'vi_VN',
-      //   name: 'Tiếng Việt',
-      //   img: '/images/VN.png'
-      // },
+      {
+        code: 'vn',
+        iso: 'vi_VN',
+        name: 'Tiếng Việt',
+        img: '/images/VN.png'
+      },
       // {
       //   code: 'ch',
       //   iso: 'zh_TW',

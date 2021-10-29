@@ -1,9 +1,9 @@
 ﻿---
-title: Is Trading forex is your cup of tea
+title: Đầu tư Forex (ngoại hối) có phải là tách trà của bạn không?
 date: 1 June 2021
 description: I am a description of a great article
 img: /images/article/Is-Trading-forex-is-your-cup-of-tea.jpg
-alt: Is Trading forex is your cup of tea
+alt: Đầu tư Forex (ngoại hối) có phải là tách trà của bạn không?
 tags: 
   - Hashtag 1
   - Hashtag 2
@@ -13,22 +13,25 @@ tags:
   - Hashtag 6
 ---
 
-One might wonder how one has such a deep interest in this Forex investment. This is because Forex investing is a subjective thing and the outcome of this investment is sometimes not fixed.
 
-You may be interested in Forex if you have the following characteristics:
+Bạn có thể tự hỏi tại sao một số người có thể điên cuồng về Forex như vậy? Điều này là do các khoản đầu tư Forex họ chủ quan và kết quả của các khoản đầu tư này đôi khi không cố định.
 
-**1. Has vision and foresight**
+Bạn có thể quan tâm đến đầu tư Forex nếu bạn có các tính năng sau:
 
-In this case, you have to be wise in money and risk management. Do you have a daily or weekly risk limit? Or will you trade all the money you have? What are your plans with Trading? Do you want to make it a career or just a side income?
+**1. Có tầm nhìn và tầm nhìn xa**
 
-**2.  Patience**
+Trong trường hợp này, bạn nên khôn ngoan trong việc quản lý tiền bạc và rủi ro. Bạn có giới hạn rủi ro hằng ngày hoặc hàng tuần không? Hay bạn sẽ giao dịch tất cả số tiền bạn có? Bạn có kế hoạch gì trong giao dịch Forex? Bạn xem nó là một công việc chính, một sự nghiệp lâu dài hay chỉ là một nghề phụ để kiếm thêm một ít thu nhập?
 
-This is a very important key in Forex. Many traders out there do not have the patience to start Forex. They have little knowledge but they continue to trade without making any analysis based on "Guess" only. Trader success is measured not through entry but exit. Either make a profit or control a loss.
+**2. Kiên nhẫn**
 
-**3.  Able to adapt**
+Đây là một chìa khóa rất quan trọng trong đầu tư Forex. Nhiều nhà giao dịch không đủ kiên nhẫn để bắt đầu giao dịch Forex. Họ bất chấp không học hỏi, tìm hiểu và thực hành trước khi bắt đầu. Tuy sở hữu một kiến thức nông cạn nhưng họ tiếp tục giao dịch mà không thực hiện bất kỳ phân tích nào chỉ dựa trên "phỏng đoán". Sự thành công của một nhà giao dịch được định nghĩa dựa trên kết quả của tổng giao dịch không phải số lượng giao dịch của họ
 
-A wise trader should always be able to adapt to ever -changing market conditions. For example, if the trend has changed from uptrend to downtrend, you must also change from "buy" to "sale" and follow the rhythm of the market. In another example, when the United States raises interest rates, you are also ready to buy Dollars and make appropriate changes in your investment plan.
+**3. Có thể điều chỉnh**
 
-**4.  Be careful**
+Một nhà giao dịch có hiểu biết phải luôn có khả năng thích nghi với bất kỳ biến động nào trên thị trường. Ví dụ, nếu xu hướng đã thay đổi từ xu hướng tăng sang xu hướng giảm, bạn cũng nên thay đổi từ "mua" sang "bán" và theo nhịp của thị trường. Trong một ví dụ khác, khi Hoa Kỳ tăng lãi suất, bạn cũng đã sẵn sàng mua Đô la và thực hiện các thay đổi thích hợp cho kế hoạch đầu tư của mình.
 
-When you are faced with an uncertain market, a wise trader should be more careful when taking risks. One example is by focusing on currencies that are easier to anticipate, lowering lot sizes or taking a break from the market if necessary.
+**4. Cẩn thận**
+
+Khi giao dịch với các thị trường không ổn định, các nhà giao dịch nên thận trọng hơn khi chấp nhận rủi ro. Ví dụ như tập trung vào các loại tiền phổ biến để dễ dự đoán hơn, kích thước lô(lot) thấp hơn hoặc rời khỏi thị trường nếu cần thiết.
+
+**Lưu ý: Thông tin chỉ mang tính chất giáo dục và bất kỳ ý kiến, phân tích, giá cả hoặc nội dung khác không được xem là tư vấn đầu tư. Đầu tư Forex sẽ có một tỷ lệ rủi ro đáng kể. Hình thức đầu tư này có thể không phù hợp với tất cả mọi người, vì vậy hãy đảm bảo rằng bạn đã hiểu rõ các rủi ro trước khi giao dịch.**

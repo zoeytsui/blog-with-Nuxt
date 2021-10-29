@@ -8,17 +8,22 @@
 
     <client-only>
       <b-card-group class="main my-1">
-        <b-card v-if="article.img" :img-src="article.img" :img-alt="article.alt" img-top tag="article" class="mx-auto border-0 col-lg-8 col-md-12">
+        <b-card tag="article" class="mx-auto border-0 col-lg-8 col-md-12">
+          <b-card-img v-if="article.img" :src="article.img" :alt="article.alt"></b-card-img>
           <b-card-text>
 
             <b-row>
-              <b-col class="col-12 col-lg-8">
+              <b-col class="col-12 d-flex flex-column">
+                <!-- <b-col class="col-12 col-lg-8"> -->
                 <h2>{{ article.title }}</h2>
                 <p class="my-auto"><em>{{ article.date }}</em></p>
+                <!-- <div>
+                  <b-badge variant="info" class="mx-1" v-for="tag of article.tags" :key="tag">{{tag}}</b-badge>
+                </div> -->
               </b-col>
 
-              <b-col class="col-12 col-lg-4 my-auto">
-                <b-row class="col d-none">
+              <b-col class="col-12 col-lg-4 d-none">
+                <b-row class="col">
                   <p class="my-auto">{{$key('Share')}}: </p>
                   <!-- <a href="https://www.facebook.com/HXFXGlobal/"> -->
                   <a :href="`https://www.facebook.com/sharer/sharer.php?u=http://forexclusive.info${$route.fullPath}`">
@@ -29,7 +34,6 @@
                   </a>
                 </b-row>
 
-                <b-badge variant="info" class="mx-1" v-for="tag of article.tags" :key="tag">{{tag}}</b-badge>
               </b-col>
             </b-row>
 
@@ -37,10 +41,10 @@
 
             <nuxt-content :document="article" />
 
-          <!-- mobile only -->
-          <a class="d-block d-lg-none" :href="`https://www.promo-hxfxglobal.com/?lang=${targetLang}`">
-            <b-img class="mt-0" center fluid :src="`/images/blog_banner_mobile_300x200_${$i18n.locale}.png`"></b-img>
-          </a>
+            <!-- mobile only -->
+            <a class="d-block d-lg-none" :href="adRedirect">
+              <b-img class="mt-0" center fluid :src="`/images/blog_banner_mobile_300x200_${targetLang}.png`"></b-img>
+            </a>
 
           </b-card-text>
         </b-card>
@@ -69,6 +73,9 @@ export default {
         case 'vn':
           return 'vi';
       }
+    },
+    adRedirect() {
+      return `https://hd.ftmarkets.com/act/bonus_2111.html?lang=${this.$i18n.locale}&utm_source=blog&utm_medium=banner`
     }
   }
 }
@@ -101,12 +108,12 @@ export default {
 }
 /* Using plain CSS */
 @media (max-width: 768px) {
-.main {
-  .nuxt-content {
-    img {
-      width: 100%;
+  .main {
+    .nuxt-content {
+      img {
+        width: 100%;
+      }
     }
-}
-}
+  }
 }
 </style>
