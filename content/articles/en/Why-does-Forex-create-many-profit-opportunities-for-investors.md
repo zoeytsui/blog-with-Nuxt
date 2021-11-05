@@ -22,3 +22,13 @@ Before implementing other profitable strategies, you should fully understand wha
 2. Financial Market Update
 When you invest in the forex market, you must monitor the rise and fall of the price and set the optimal price on when you should exit or close the trade.
 Also be aware of other financial markets, such as indices, commodities and stocks, as the impact of global economies and significant events can be tracked in different locations. This market and thus its impact on the foreign exchange market.
+
+3. Use leverage when trading
+When using a broker to trade forex, they are likely to offer leveraged trading. If used wisely, it can help increase your profits, as it gives you more exposure to the market, with less investment.
+
+4.	Take advantage of Demo Account Option
+Forex trading beginners should take their time using the free demo accounts that most trading platforms offer before moving on to using real capital. This is your chance to access forex advice, information and educational materials as well as the opportunity to experience and practice Forex trading on the exchange. When trading skills are perfected in a demo account, you will be more likely to win big in the Forex market.
+
+Good luck and happy trading!
+
+***This is not personal financial advice. Trading carries a high level of risk and can result in the loss of your capital. Trading may not be suitable for all individuals. Please ensure you fully understand the risks involved before trading. The information is not intended to violate local regulations. ***

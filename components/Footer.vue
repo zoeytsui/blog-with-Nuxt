@@ -24,6 +24,10 @@
         'By opening this website, you fully agree and understand all the terms and conditions mentioned above and trading financial products carries a high level of risk and may not be suitable for all individuals.')}}
       </small></p>
 
+    <b-modal id="Subscribe" ok-only centered :title="`${$key('Thank you for subscribing!')}`">
+      <p class="my-4">{{$key('You have successfully subscribed to our newsletter and promotions. You will hear from us shortly!')}}</p>
+    </b-modal>
+
   </b-jumbotron>
 
 </template>
@@ -40,7 +44,7 @@ export default {
       if (!this.email || this.email === '') return;
       this.$axios.$post(`api/tools/?service=acccenter.addSubscribe`, { email: this.email }).then(res => {
         if (res.ret !== 200) return alert(`${res.ret}: ${res.msg}`)
-        alert('Succeed!')
+        this.$bvModal.show("Subscribe")
       })
     }
   }
