@@ -2,7 +2,7 @@
 title: Elon Musk is now nearly $100 billion richer than Jeff Bezos, and his fortune is on the verge of reaching $300 billion.
 date: 29 October 2021
 description: I am a description of a great article
-img: /images/article/BREAKING-Elon-Musk-is-now-nearly-100-billion-richer-than-Jeff-Bezos-and-his-fortune-is-on-the-verge-of-reaching-300-billion.png
+img: /images/article/BREAKING-Elon-Musk-is-now-nearly-100-billion-richer-than-Jeff-Bezos-and-his-fortune-is-on-the-verge-of-reaching-300-billion/1.png
 alt: Elon Musk is now nearly $100 billion richer than Jeff Bezos, and his fortune is on the verge of reaching $300 billion.
 tags: 
   - Hashtag 1

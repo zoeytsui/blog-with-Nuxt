@@ -48,7 +48,7 @@ export default {
     onSubmit(event) {
       event.preventDefault();
 
-      this.$axios.$post(`api/tools/?service=acccenter.addContactUs`, this.form).then(res => {
+      this.$axios.$post(`https://openapi.hxfxglobal.com/tools/?service=acccenter.addContactUs`, this.form).then(res => {
         if (res.ret !== 200) return alert(`${res.ret}: ${res.msg}`)
         alert('Succeed!')
       })

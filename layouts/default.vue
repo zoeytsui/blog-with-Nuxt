@@ -21,12 +21,6 @@ export default {
 </script>
 
 <style lang="scss">
-html {
-  body {
-    font-family: "Exo2-Bold", "Exo2-Medium", "Exo2-semiBold";
-  }
-}
-
 *,
 *::before,
 *::after {

@@ -2,7 +2,7 @@
 title: Chapter 2:Hammer vs Hanging man
 date: 6 November 2021
 description: I am a description of a great article
-img: /images/article/Chapter_2_Hammer_vs_Hanging_man.png
+img: /images/article/Chapter_2_Hammer_vs_Hanging_man/2.png
 alt: Chapter 2:Hammer vs Hanging man
 tags: 
   - Hashtag 1

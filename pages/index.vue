@@ -68,8 +68,9 @@ export default {
   components: { SideAd },
   async asyncData({ $content, i18n }) {
     const articles = await $content(`articles/${i18n.locale}`)
-      .sortBy('order')
+      .sortBy('createdAt', 'desc')
       .fetch();
+    // console.log('articles', articles);
     return { articles }
   },
   computed: {

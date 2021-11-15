@@ -3,27 +3,26 @@ $info: #00adaa;
 
 @font-face {
     font-family: "Exo2-Bold";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
     src: url("~assets/fonts/static/Exo2-Bold.ttf") format("truetype");
 }
-
 @font-face {
     font-family: "Exo2-Medium";
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
     src: url("~assets/fonts/static/Exo2-Medium.ttf") format("truetype");
 }
-
 @font-face {
     font-family: "Exo2-semiBold";
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
     src: url("~assets/fonts/static/Exo2-semiBold.ttf") format("truetype");
 }
+@font-face {
+    font-family: "Exo2-ExtraBold";
+    src: url("~assets/fonts/static/Exo2-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Exo2-Light";
+    src: url("~assets/fonts/static/Exo2-Light.ttf") format("truetype");
+}
+
+$font-family-sans-serif: "Exo2-Medium", "Exo2-Bold", "Exo2-SemiBold", "Exo2-ExtraBold", "Exo2-Light" !default;
 
 .bg-info,
 .btn-info {
@@ -44,7 +43,7 @@ h6 {
 }
 p {
     color: #5c5c5c;
-    font-family: "Exo2-Medium";
+    // font-family: "Exo2-Medium";
 }
 
 .page-enter-active,

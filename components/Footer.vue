@@ -42,7 +42,7 @@ export default {
   methods: {
     onSubscribe() {
       if (!this.email || this.email === '') return;
-      this.$axios.$post(`api/tools/?service=acccenter.addSubscribe`, { email: this.email }).then(res => {
+      this.$axios.$post(`https://openapi.hxfxglobal.com/tools/?service=acccenter.addSubscribe`, { email: this.email }).then(res => {
         if (res.ret !== 200) return alert(`${res.ret}: ${res.msg}`)
         this.$bvModal.show("Subscribe")
       })

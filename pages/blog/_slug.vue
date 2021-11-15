@@ -61,7 +61,6 @@ export default {
     try {
       const article = await $content(`articles/${i18n.locale}`, params.slug).fetch();
       const articles = await $content(`articles/${i18n.locale}`).fetch();
-
       return { article, articles }
     } catch (error) { console.error(error) }
   },
@@ -103,6 +102,15 @@ export default {
     }
     div {
       overflow: auto;
+    }
+    table {
+      * {
+        border: 1px solid #000;
+      }
+      p,
+      img {
+        border: 0;
+      }
     }
   }
 }

@@ -2,7 +2,7 @@
 title: Chương 2:Mô hình búa (Hammer) vs Mô hình nến Hanging Man
 date: 6 November 2021
 description: I am a description of a great article
-img: /images/article/Chapter_2_Hammer_vs_Hanging_man_vn.png
+img: /images/article/Chapter_2_Hammer_vs_Hanging_man/2_vn.png
 alt: Chương 2:Mô hình búa (Hammer) vs Mô hình nến Hanging Man
 tags: 
   - Hashtag 1
