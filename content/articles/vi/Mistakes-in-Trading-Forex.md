@@ -1,6 +1,6 @@
 ---
 title: Sai lầm khi đầu tư ngoại hối
-date: 1 June 2021
+date: 2021-06-01
 description: I am a description of a great article
 img: /images/article/Mistakes_in_Trading_Forex.png
 alt: Sai lầm khi đầu tư ngoại hối

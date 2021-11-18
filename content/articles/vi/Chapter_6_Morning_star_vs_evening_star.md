@@ -1,6 +1,6 @@
 ﻿---
 title: Chương 6:Mô hình Morning Star (Nến Sao Mai) vs Evening 
-date: 12 November 2021
+date: 2021-11-12
 description: I am a description of a great article
 img: /images/article/Chapter_6_Morning_star_vs_evening_star/1_vn.png
 alt: Chương 6:Mô hình Morning Star (Nến Sao Mai) vs Evening 

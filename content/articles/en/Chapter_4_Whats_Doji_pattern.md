@@ -1,6 +1,6 @@
 ﻿---
 title: Chapter 4:What’s Doji pattern?
-date: 12 November 2021
+date: 2021-11-12
 description: I am a description of a great article
 alt: Chapter 4:What’s Doji pattern?
 tags: 

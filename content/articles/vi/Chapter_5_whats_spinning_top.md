@@ -1,6 +1,6 @@
 ﻿---
 title: Chương 5:Mô hình Spinning Top (Con Xoay) là gì?
-date: 12 November 2021
+date: 2021-11-12
 description: I am a description of a great article
 img: /images/article/Chapter_5_whats_spinning_top/1_vn.png
 alt: Chương 5:Mô hình Spinning Top (Con Xoay) là gì?

@@ -1,6 +1,6 @@
 ﻿---
 title: When is the right time to sell or buy Forex
-date: 1 June 2021
+date: 2021-06-01
 description: I am a description of a great article
 img: /images/article/When-is-the-right-time-to-sell-or-buy-Forex.png
 alt: When is the right time to sell or buy Forex

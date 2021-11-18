@@ -95,7 +95,7 @@ export default {
       //   img: '/images/malay.png'
       // },
       {
-        code: 'vn',
+        code: 'vi',
         iso: 'vi_VN',
         name: 'Tiếng Việt',
         img: '/images/VN.png'

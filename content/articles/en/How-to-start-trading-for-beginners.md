@@ -1,6 +1,6 @@
 ---
 title: How to start trading for beginners?
-date: 2 June 2021
+date: 2021-06-02
 description: This is a description for the article about me
 img: /images/article/How-to-start-trading-for-beginners.png
 alt: How to start trading for beginners?

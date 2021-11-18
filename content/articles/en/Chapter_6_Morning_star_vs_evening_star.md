@@ -1,6 +1,6 @@
 ﻿---
 title: Chapter 6:Morning Star vs Evening Star
-date: 12 November 2021
+date: 2021-11-12
 description: I am a description of a great article
 img: /images/article/Chapter_6_Morning_star_vs_evening_star/1.png
 alt: Chapter 6:Morning Star vs Evening Star

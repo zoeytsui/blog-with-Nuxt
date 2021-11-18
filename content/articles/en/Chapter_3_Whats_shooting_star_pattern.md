@@ -1,6 +1,6 @@
 ﻿---
 title: Chapter 3:What’s shooting star pattern?
-date: 8 November 2021
+date: 2021-11-08
 description: I am a description of a great article
 img: /images/article/Chapter_3_Whats_shooting_star_pattern.jpg
 alt: Chapter 3:What’s shooting star pattern?

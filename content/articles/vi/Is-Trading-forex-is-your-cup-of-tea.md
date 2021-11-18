@@ -1,6 +1,6 @@
 ﻿---
 title: Đầu tư Forex (ngoại hối) có phải là tách trà của bạn không?
-date: 1 June 2021
+date: 2021-06-01
 description: I am a description of a great article
 img: /images/article/Is-Trading-forex-is-your-cup-of-tea.jpg
 alt: Đầu tư Forex (ngoại hối) có phải là tách trà của bạn không?

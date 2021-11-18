@@ -1,6 +1,6 @@
 ﻿---
 title: Chương 3:Mô hình nến Shooting Star (Nến Bắn Sao) là gì?
-date: 8 November 2021
+date: 2021-11-08
 description: I am a description of a great article
 img: /images/article/Chapter_3_Whats_shooting_star_pattern.jpg
 alt: Chương 3:Mô hình nến Shooting Star (Nến Bắn Sao) là gì?

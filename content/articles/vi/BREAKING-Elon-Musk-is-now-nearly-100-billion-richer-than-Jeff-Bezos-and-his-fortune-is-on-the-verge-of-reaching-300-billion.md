@@ -1,6 +1,6 @@
 ﻿---
 title: Elon Musk hiện giàu hơn Jeff Bezos gần 100 tỷ USD và tài sản của ông sắp đạt mốc 300 tỷ USD.
-date: 29 October 2021
+date: 2021-10-29
 description: I am a description of a great article
 img: /images/article/BREAKING-Elon-Musk-is-now-nearly-100-billion-richer-than-Jeff-Bezos-and-his-fortune-is-on-the-verge-of-reaching-300-billion/1_vn.png
 alt: Elon Musk hiện giàu hơn Jeff Bezos gần 100 tỷ USD và tài sản của ông sắp đạt mốc 300 tỷ USD.

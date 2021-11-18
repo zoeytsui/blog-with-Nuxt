@@ -1,6 +1,6 @@
 ---
 title: Vì sao Forex tạo nhiều cơ hội kiếm lợi nhuận cho các nhà đầu tư?
-date: 28 October 2021
+date: 2021-10-28
 description: I am a description of a great article
 # img: /images/article/BREAKING-Elon-Musk-is-now-nearly-100-billion-richer-than-Jeff-Bezos-and-his-fortune-is-on-the-verge-of-reaching-300-billion.png
 alt: Vì sao Forex tạo nhiều cơ hội kiếm lợi nhuận cho các nhà đầu tư?

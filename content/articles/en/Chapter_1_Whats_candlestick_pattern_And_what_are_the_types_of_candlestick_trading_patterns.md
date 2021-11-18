@@ -1,6 +1,6 @@
 ﻿---
 title: Candlestick series. What’s candlestick pattern and which is the most reliable?
-date: 4 November 2021
+date: 2021-11-04
 description: I am a description of a great article
 img: /images/article/Chapter_1_Whats_candlestick_pattern_And_what_are_the_types_of_candlestick_trading_patterns.jpg
 alt: Candlestick series. What’s candlestick pattern and which is the most reliable?

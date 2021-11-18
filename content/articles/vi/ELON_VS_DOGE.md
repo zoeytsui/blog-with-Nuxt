@@ -1,6 +1,6 @@
 ﻿---
 title: What did Elon Musk tweet again that Dogecoin crashedt? Elon vs Doge
-date: 12 November 2021
+date: 2021-11-12
 description: I am a description of a great article
 img: /images/article/ELON_VS_DOGE/2.png
 alt: What did Elon Musk tweet again that Dogecoin crashedt? Elon vs Doge

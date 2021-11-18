@@ -1,6 +1,6 @@
 ﻿---
 title: Thị trường crypto (tiền ảo) hỗn loạn sau khi Trung Quốc công bố cấm khai thác coin
-date: 12 November 2021
+date: 2021-11-12
 description: I am a description of a great article
 img: /images/article/crypto_crashing_after_china_vowed_to_crackdown_crypto_mining.png
 alt: Thị trường crypto (tiền ảo) hỗn loạn sau khi Trung Quốc công bố cấm khai thác coin

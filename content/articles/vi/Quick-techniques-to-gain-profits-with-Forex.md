@@ -1,6 +1,6 @@
 ﻿---
 title: Các kỹ thuật giúp bạn kiếm lợi nhuận nhanh chóng với Forex
-date: 1 June 2021
+date: 2021-06-01
 description: I am a description of a great article
 img: /images/article/Quick-techniques-to-gain-profits-with-Forex.png
 alt: Các kỹ thuật giúp bạn kiếm lợi nhuận nhanh chóng với Forex

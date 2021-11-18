@@ -18,7 +18,7 @@
               <b-col class="col-12 d-flex flex-column">
                 <!-- <b-col class="col-12 col-lg-8"> -->
                 <h2>{{ article.title }}</h2>
-                <p class="my-auto"><em>{{ article.date }}</em></p>
+                <p class="my-auto"><em>{{ formatDate(article.date) }}</em></p>
                 <!-- <div>
                   <b-badge variant="info" class="mx-1" v-for="tag of article.tags" :key="tag">{{tag}}</b-badge>
                 </div> -->
@@ -52,7 +52,7 @@
 
           <!-- mobile only -->
           <a v-if="index % 2" class="d-block d-lg-none" :href="adRedirect">
-            <b-img class="mt-5" center fluid :src="`/images/blog_banner_mobile_300x200_${targetLang}.png`"></b-img>
+            <b-img class="mt-5" center fluid :src="`/images/blog_banner_mobile_300x200_${$i18n.locale}.png`"></b-img>
           </a>
 
         </b-card>
@@ -68,23 +68,20 @@ export default {
   components: { SideAd },
   async asyncData({ $content, i18n }) {
     const articles = await $content(`articles/${i18n.locale}`)
-      .sortBy('createdAt', 'desc')
+      .sortBy('date', 'desc')
       .fetch();
     // console.log('articles', articles);
     return { articles }
   },
   computed: {
-    targetLang() {
-      switch (this.$i18n.locale) {
-        case 'en':
-          return 'en';
-        case 'vn':
-          return 'vi';
-      }
-    },
     adRedirect() {
       return `https://hd.ftmarkets.com/act/bonus_2111.html?lang=${this.$i18n.locale}&utm_source=blog&utm_medium=banner`
     }
+  },
+  methods: {
+    formatDate(date) {
+      return new Intl.DateTimeFormat(this.$i18n.locale).format(new Date(date))
+    },
   }
 }
 </script>

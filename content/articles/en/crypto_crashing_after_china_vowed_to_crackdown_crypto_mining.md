@@ -1,6 +1,6 @@
 ﻿---
 title: Crypto market (virtual currency) in chaos after China announced a ban on coin mining
-date: 12 November 2021
+date: 2021-11-12
 description: I am a description of a great article
 img: /images/article/crypto_crashing_after_china_vowed_to_crackdown_crypto_mining.png
 alt: Crypto market (virtual currency) in chaos after China announced a ban on coin mining

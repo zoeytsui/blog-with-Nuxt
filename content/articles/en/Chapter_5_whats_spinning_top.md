@@ -1,6 +1,6 @@
 ﻿---
 title: Chapter 5:What’s spinning top?
-date: 12 November 2021
+date: 2021-11-12
 description: I am a description of a great article
 img: /images/article/Chapter_5_whats_spinning_top/1.png
 alt: Chapter 5:What’s spinning top?

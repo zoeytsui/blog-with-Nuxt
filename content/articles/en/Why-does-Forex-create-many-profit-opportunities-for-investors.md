@@ -1,6 +1,6 @@
 ---
 title: Why does Forex create many profit opportunities for investors?
-date: 28 October 2021
+date: 2021-10-28
 description: I am a description of a great article
 # img: /images/article/BREAKING-Elon-Musk-is-now-nearly-100-billion-richer-than-Jeff-Bezos-and-his-fortune-is-on-the-verge-of-reaching-300-billion.png
 alt: Why does Forex create many profit opportunities for investors?

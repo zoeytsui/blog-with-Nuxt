@@ -1,6 +1,6 @@
 ﻿---
 title: Chương 4:Mô hình Nến Doji là gì?
-date: 12 November 2021
+date: 2021-11-12
 description: I am a description of a great article
 alt: Chương 4:Mô hình Nến Doji là gì?
 tags: 
