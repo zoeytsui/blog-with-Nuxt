@@ -18,7 +18,7 @@ export default {
   },
   computed: {
     adRedirect() {
-      return `https://hd.ftmarkets.com/act/bonus_2111.html?lang=${this.$i18n.locale}&utm_source=blog&utm_medium=banner`
+      return `https://hd.ftmarkets.com/act/bonus_2112.html?lang=${this.$i18n.locale}&utm_source=blog&utm_medium=banner`
     }
   },
   methods: {
